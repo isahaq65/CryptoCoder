@@ -4,6 +4,7 @@ import getWeb3 from "./getWeb3";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./App.css";
+import Navbar from "./component/Navbar";
 
 const App = () => {
   const [contract, setContract] = useState(null);
@@ -82,12 +83,7 @@ const App = () => {
 
   return (
     <div>
-      <nav className="navbar navbar-light bg-light px-4">
-        <a className="navbar-brand" href="#">
-          Crypto Coders
-        </a>
-        <span>{account}</span>
-      </nav>
+    <Navbar/>
       <div className="container-fluid mt-5">
         <div className="row">
           <div className="col d-flex flex-column align-items-center">
